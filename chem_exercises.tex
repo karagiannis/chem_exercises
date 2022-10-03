@@ -1,0 +1,146 @@
+%\documentclass{book}
+%\documentclass[twocolumn]{article}
+\documentclass{article}
+%\documentclass{book}
+\usepackage{parskip}
+\usepackage{geometry}
+\geometry{
+textwidth = 280pt,
+marginparwidth=178pt,
+marginparsep = 40pt,
+lmargin = 90pt
+}
+\usepackage{multicol}
+\setlength{\columnsep}{0.9cm}
+\usepackage{supertabular}
+\usepackage[utf8]{inputenc}
+%\usepackage{geometry}   % Setup for page and paper dimensions
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{caption}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  tableposition=top
+}
+\usepackage{float}
+\usepackage[swedish]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder = {0 0 0}
+}
+\usepackage{enumitem}
+\usepackage{verbatimbox}
+\usepackage{fancyvrb}
+\usepackage{graphicx}   
+\usepackage{lipsum}  
+\usepackage[leqno]{amsmath}
+\usepackage{listings} 
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{steinmetz}
+\newcommand*\mycirc[1]{%
+\begin{tikzpicture}[baseline={(0,-0.1)}]
+\node[draw,circle,inner sep=1pt] {#1};
+\end{tikzpicture}}
+\usepackage{graphicx}
+\usepackage{chemfig}
+\usepackage{chemformula}
+%\usepackage{chemmacros}
+%\chemsetup{modules=all}
+\usepackage{elements}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{marginnote}
+\usepackage{layout}
+
+\newcommand*\pkg[1]{\texttt{#1}}
+
+
+\newcommand*\textcircle[1]{\textcircled{\raisebox{0.14em}{#1}}}
+\newcommand{\quotes}[1]{``#1''}
+\usepackage{ifthen}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+
+
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\setlength{\parindent}{0pt}
+
+\newcommand*\sepline{%
+  \begin{center}
+    \rule[1ex]{.5\textwidth}{.5pt}
+  \end{center}}
+
+\newcommand*\sepstars{%
+  \begin{center}
+    $\star\star\star$
+  \end{center}}
+  
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        %\huge\bfseries \@chapapp\space \thechapter
+        \Huge\bfseries \thechapter.\space%
+        %\par\nobreak
+        %\vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+\title{Laborationsförberedelse 1\\}
+\author{Lasse Karagiannis}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+         
+\mathchardef\mhyphen="2D
+
+\usepackage{silence}
+\WarningFilter{latex}{Underfull}
+\WarningFilter{latex}{Overfull}
+\WarningFilter{latex}{Text page}
+\usepackage{subfiles}
+\begin{document}
+%\begin{titlepage}
+%\maketitle
+%\end{titlepage}
+%\tableofcontents
+%\newpage
+%\begin{multicols}{2}
+
+%\maketitle
+
+%\subfile{E1A.tex}
+%\subfile{LewisOF2.tex}
+%\subfile{LewisI3.tex}
+%\subfile{LewisC2H4.tex}
+%\subfile{Chap13.tex}
+%\subfile{Chap14.tex}
+%\subfile{IdealGas.tex}
+%\subfile{Chap15.tex}
+%\subfile{Chap16.tex}
+%\subfile{LabPrep1.tex}
+%\subfile{LabPrep2.tex}
+\subfile{LabPrepInledandeKemi.tex}
+%\subfile{DiKopparOxid.tex}
+%\end{multicols}
+\end{document}

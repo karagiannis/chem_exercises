@@ -1,0 +1,494 @@
+﻿%\documentclass[twocolumn]{article}
+\documentclass[./chem_exercises.tex]{subfiles}
+\begin{document}
+
+%\begin{titlepage}
+%\maketitle
+%\end{titlepage}
+
+
+
+\section{Laborationsförberedelse 1}
+Denna text avser att uppfylla kraven för att få kunna utföra Laboration 2 och innehåller därför
+försök till svar på de obligatoriska frågor som krävs för delatagande i labben samt redovining
+av den beräkningar som skall uppvisas avseende tillverkning av två buffertar enligt laborationskompmendiet.
+Tilldelat labbgrupp nummer är C5. Detta innebär att buffertarna ska tillverkas enligt följande specifikaton.
+\begin{flalign*}
+\text{Buffert 1} &= \text{pH } 3.5\\
+\text{Buffert 2} &= \text{pH } 7.4\\
+\end{flalign*}
+
+
+\subsection{Frågor att besvara innan laborationen}
+\begin{enumerate}[label=(\alph*)]
+\item \textit{Varför blir lösningen varm när \ch{NaOH} och vatten blandas?}\\
+
+Hydratiseringsentalpin för \ch{NaOH} är -44.5 kJ/mol då volymen $\ch{H2O}\gg$ volymen $\ch{NaOH}(aq)$\footnote{\url{https://chemistry.stackexchange.com/questions/147458/enthalpy-of-dissolution-of-naoh-in-small-amount-of-water}}.
+Det negativa tecknet betyder att hydratiseringen är en exoterm reaktion - energi avges.\\
+
+\item \textit{Varför används en plastbehållare för lösningen (i stället för en glasflaska)?}\\
+
+Därför att hydratiserad \ch{NaOH} etsar glas\footnote{\url{https://chemistry.science.narkive.com/tCRaUcEV/why-is-naoh-sodium-hydroxide-stored-in-a-plastic-bottle}}\\
+
+\item \textit{Beräkna lösningens NaOH-koncentration uttryckt i molal (mol/kg
+lösningsmedel).}\\
+
+Molmassan $M$ för \ch{NaOH} är summan av de ingående atomernas molmassor
+\begin{flalign*}
+M(\ch{Na})&=22.989\\
+M(\ch{O})&=15.9994\\
+M(\ch{H})&=1.00794\\
+M(\ch{Na})+M(\ch{O})+M(\ch{H})&=39.996\\
+                              &\approx 40.0 \frac{\text{ g}}{\text{ mol}}
+\end{flalign*}
+$25$g \ch{NaOH} motsvarar således
+\begin{flalign*}
+n&=\frac{m}{M}=\frac{25\text{g}}{40\text{g}\cdot\text{ mol}^{-1}}=0.6250 \text{ mol}
+\end{flalign*}
+25 ml \ch{H2O} skulle användas till lösningen. Densiteten för \ch{H2O} är 1 g per ml således är massan för vattnet 25g.
+\begin{flalign*}
+25\text{g} &=0.025\text{ kg}\\
+\end{flalign*}
+Därför blir molaliteten
+\begin{flalign*}
+     &\frac{n}{m_{\ch{H20}}(\text{lösningsmedel kg})}\\
+      &=\frac{0.6250\text{mol}}{0.025\text{ kg}\text{ kg}}\\
+      &=25 \text{mol per kg lösningsmedel }\ch{H2O}
+\end{flalign*}
+
+\item \textit{Ungefär hur stor blir den totala ammoniakkoncentrationen i bufferten uttryckt i
+M? 25 viktsprocent ammoniaklösning har en densitet  0.91 kg per liter.}\\
+
+Vad menas med den totala ammoniak-koncentrationen? Avser detta \ch{NH3} enbart eller skall motsvarande
+vikt av \ch{NH4^+} dras ifrån från jämnviktsbalansen?
+% Vi lägger därefter till 0.130 mol \ch{NH4^+} genom att tillsätta saltet och då inträffar
+%ett nytt jämviktsläge för \ch{NH3}(aq) är det detta nya jämviktsläge som är \textit{den totala ammoniak koncentrationen}?
+Antar  att 63.6 ml 25 vikts-\% ammoniaklösning är ett initialt värde innan någon
+jämvikt infunnit sig.(Tycker att det borde formulerats tydligare.)\\
+
+Antar att den molariteten som 63.6 ml 25 vikts-\% ammoniaklösning motsvarar är ett initialt
+värde dvs. innan någon reaktionsjämvikt inställt sig.
+
+Densiteten för ammoniaklösningen är $\rho=0.91\text{ kg}/\text{dm}^3$
+\begin{flalign*}
+    \rho &=0.91\text{kg}/\text{dm}^3=0.91\text{ g}/\text(mL)\\
+\end{flalign*}
+Massan ammoniak lösning $m_{\ch{NH3}(aq)}$ är
+\begin{flalign*}
+   m_{\ch{NH3}(aq)}&=\rho V\\
+                   &=0.91\frac{\text{ g}}{\text{ mL}}\cdot 63.6\text{mL}\\
+                   &=57.876\text{ g}
+\end{flalign*}
+Ur viktprocentenes definition fås massan \ch{NH3} $m_{\ch{NH3}}$
+\begin{flalign*}
+\text{vikt\%}&=\frac{m_{\ch{NH3}}}{m_{\ch{NH3}(aq)}}\\
+        0.25&=\frac{m_{\ch{NH3}}}{57.876}\iff\\
+		m_{\ch{NH3}}&=0.25\cdot 57.876 \\
+		            &=14.469\text{g}
+\end{flalign*}
+För att beräkna molariteten behövs molmassan för \ch{NH3} $M_{\ch{NH3}}$
+\begin{flalign*}
+M_{\ch{NH3}}&=17.0304 \frac{\text{ g}}{\text{mol}}
+\end{flalign*}
+Substansmängden $n_{\ch{NH3}}$ blir därför
+\begin{flalign*}
+n_{\ch{NH3}} &=\frac{m_{\ch{NH3}}}{M_{\ch{NH3}}}\\
+             &=\frac{14.469\text{g}}{17.0304\text{ g}\cdot\text{mol}^{-1}}\\
+			 &=0.849598365\text{ mol}
+\end{flalign*}
+Molariteten $c_{\ch{NH3}}$ blir därför
+\begin{flalign*}
+c_{\ch{NH3}}&=\frac{n_{\ch{NH3}}}{V}\\
+            &=\frac{0.849598365\text{ mol}}{0.0636\text{ L}}\\
+			&=13.358464858\text{ M}
+\end{flalign*}
+Initialt, innan följande jämviktsreaktion
+\begin{flalign*}
+\underset{b}{\ch{NH3}(aq)} + \underset{s}{\ch{H2O}(l)}\ch{<=>}\underset{s}{\ch{NH4^+}} + \underset{b}{\ch{OH^-}}
+\end{flalign*}
+så är molariteten $13.358464858\text{M}$ för \ch{NH3}(aq).
+ICE-tabell ger följande där vattnets autoprotolys försummas.
+\begin{center}
+\hspace{1em}\\
+\begin{tabular}{c c c c c c} 
+  & \ch{NH3} & \!\!\ch{<=>}\!\! &\ch{NH4^+}& \!\!+\!\!&\ch{OH^-} \\ 
+I(M): &13.36 \!\!\!  &  &0.00& \!\!\! &0.00\\ 
+C(M):  &-x     & \!\!\!&x   & \!\!\! &x\\ 
+\hline
+E(M): &13.36-x  & \!\!\! &x& \!\!\! &x\\
+\end{tabular}
+\end{center}
+
+Basjoniseringskonstant $K_b$ är enligt boken $1.8\times 10^{-5}\text{M}$
+Således fås sambandet ur ekvationen för $K_b$ enligt
+\begin{flalign*}
+K_b&=\frac{[\ch{NH4^+}][\ch{OH^-}]}{[\ch{NH3}]}\\
+1.8\times 10^{-5}&=\frac{x^2}{13.358-x}\\
+\end{flalign*}
+Antar att $13.36\gg x$
+\begin{flalign*}
+1.8\times 10^{-5}&=\frac{x^2}{13.358}\iff\\
+x&=\pm\sqrt{13.358\cdot 1.8\times 10^{-5} }\\
+ &=\pm 0.015506515
+\end{flalign*}
+Joniseringsfraktionen är
+\begin{flalign*}
+\text{Joniseringsfraktion}&=\frac{0.015506515}{13.358464858}\\
+&=1.1608e-03
+\end{flalign*}
+vilket visar att antagandet var rimligt.
+Löser andragradaren för fullständighetens skull
+i Matlab.
+\begin{verbatim}
+%Kb=x^2/(a-x);
+clear all
+Kb=1.8E-5
+a=13.358464858
+%x^2+K*x-Kb=0
+c=[1,Kb,-Kb*a];
+sol = roots(c)
+w=1E-14;
+if(sol(1)>0)
+  disp('sol(1)>0')
+  OH=sol(1)
+  pOH=-log10(OH)
+  H=w/OH
+else
+  if(sol(2)>0)
+    disp('sol(2)>0')
+     OH=sol(2)
+     pOH=-log10(OH)
+     H=w/OH
+  end
+end
+pH=-log10(H)
+pH_from_pOH=14-pOH
+\end{verbatim}
+Vilket ger utskriften
+\begin{verbatim}
+Kb = 1.8000e-05
+a = 13.358
+sol =
+
+  -0.015516
+   0.015498
+
+sol(2)>0
+OH = 0.015498
+pOH = 1.8097
+H = 6.4526e-13
+pH = 12.190
+pH_from_pOH = 12.190
+\end{verbatim}
+Vid jämvikt är koncentrationerna följande:
+\begin{flalign*}
+[\ch{NH4^+}]&=0.015498\text{ M}\\
+[\ch{OH^-}]&=0.015498\text{ M}\\
+[\ch{NH3}]&=13.358-0.015498=13.343\text{ M}\\
+[H^+]&=6.4526\times 10^{-13}\text{ M}\\
+\end{flalign*}
+
+Nu skall 7 gram av saltet ammoniumklorid \ch{NH4Cl} tillsättas
+vilket har molmassan $M_{\ch{NH4Cl}}$
+\begin{flalign*}
+M_{\ch{NH4Cl}}&=1.00647+4\cdot1.00794+35.4527\\
+              &=53.49093\text{ g}\cdot\text{ mol}^{-1}
+\end{flalign*}
+Substansmängden $n_{\ch{NH4Cl}}$ är
+\begin{flalign*}
+n_{\ch{NH4Cl}}&=\frac{m_{\ch{NH4Cl}}\text{ g}}{M_{\ch{NH4Cl}}\text{ g}\cdot\text{ mol}^{-1}}\\
+              &=\frac{7}{53.49093}\\
+              &=0.130863307\text{ mol}\\
+\end{flalign*}
+\ch{NH4Cl} löses i vatten enligt reaktionen
+\begin{flalign*}
+\ch{NH4Cl}(s)+\ch{H2O}(l)\rightarrow \ch{NH4^+}(aq)+\ch{Cl^-}
+\end{flalign*}
+\ch{Cl^-} jonen har ingen affinitet för \ch{H^+} och ingen tendens
+att hydratiseras så den är endast åskådarjon. Den lösta \ch{NH4^+}(aq)
+har samma substansmängd såsom \ch{NH4Cl}(s) p.g.a. 1:1 förhållande och koncentrationen innan jämviktsreaktionen påbörjas såsom
+\begin{flalign*}
+c'_{\ch{NH4^+}}&=\frac{n_{\ch{NH4^+}}}{V}\\
+              &=\frac{0.130863307\text{ mol}}{0.0636\text{ L}}\\
+              &=2.0576\text{M}
+\end{flalign*}
+Ny koncentration $c''$ direkt efter tillsättning men innan jämviktsreaktion påbörjas är
+\begin{flalign*}
+c''_{\ch{NH4^+}}&=c'_{\ch{NH4^+}}+c_{\ch{NH4^+}}\\
+                &=2.0576\text{ M}+0.015498\text{ M}\\
+                &=2.0731\text{ M}
+\end{flalign*}
+\begin{center} 
+ \hspace{1em}\\
+\begin{tabular}{c c c c c c} 
+  & \ch{NH3} & \!\!\ch{<=>}\!\! &\ch{NH4^+}& \!\!+\!\!&\ch{OH^-} \\ 
+I(M): &13.343 \!\!\!  &  &2.07& \!\!\! &0.015\\ 
+C(M):  &-x     & \!\!\!&+x   & \!\!\! &+x\\ 
+\hline
+E(M): &13.34-x  & \!\!\! &x+2.07& \!\!\! &x+0.015\\
+\end{tabular} 
+\end{center}
+Ekvationen för basjoniseringskonstanten ger
+
+\begin{flalign*}
+K_b&=\frac{[\ch{NH4^+}][\ch{OH^-}]}{[\ch{NH3}]}\\
+1.8\times 10^{-5}&=\frac{(x+2.07)(x+0.015)}{13.34-x}\\
+\end{flalign*}
+Utskriften från Matlab ger följande
+\begin{verbatim}
+OH = 1.1499e-04
+pOH = 3.9394
+H = 8.6967e-11
+pH = 10.061
+NH3_konc = 13.343
+\end{verbatim}
+Vi ser att tillsatsen av \ch{NH4^+} försköt reaktionen åt vänster
+eftersom pH gick från 12.190 till 10.061.\\
+
+Lösningen späds därefter till 100 ml.
+De nya koncentrationerna blir
+\begin{flalign*}
+c_{100\text{ml}} &=\frac{n}{V_{new}}\\
+                 &=\frac{c_{old}\cdot V_{old}}{V_{new}}\\
+c_{\ch{NH3}(aq-100\text{ ml})}&=\frac{13.343\cdot 0.0636}{0.1}\\
+                             &=8.486148\\
+c_{\ch{H^+}(aq-100\text{ ml})}&=\frac{8.6967\times 10^{-11}\cdot 0.0636}{0.1}\\
+                             &=5.5311\times10^{-11}\\
+\end{flalign*}
+
+\item \textit{Räkna ut vilket teoretiskt pH-värden bufferten borde få.}\\
+\begin{flalign*}
+pH&=-log10(5.5311\times10^{-11})\\
+  &=10.257
+\end{flalign*}
+
+
+\item \textit{Vad kännetecknar en bra syra/bas-buffert! Motivera!}\\
+
+Den kan hålla pH värdet konstant vid tillsättning av syror eller baser.
+
+\item \textit{Skicka in recept på hur buffertarna ska göras till din handledare.}\\
+
+\item \textit{Beskriv kortfattat med reaktionsformler vad som händer när den buffert du valt
+blir utsatt för en störning i form av stark protolyt (välj fritt typ av stark protolyt.)}
+
+Följande buffrar tilldelades
+\begin{flalign*}
+&\ch{HCOOH}+\ch{H2O}\ch{<=>}\ch{H^+} + \ch{HCOO^-}\\
+&\ch{HCOONa}(s) +\ch{H2O}\rightarrow \ch{HCOO^-}(aq)\\
+\end{flalign*}
+Om \ch{H^+} tillsättes så kommer den konjugerade basen i högerledet
+att omvandla oxoniumjonen till vatten
+\begin{flalign*}
+\underset{s}{\ch{H^+}} +\underset{b}{\ch{HCOO^-}}\rightarrow \underset{s}{\ch{HCOOH}}+\underset{b}{\ch{H2O}}\\
+\end{flalign*}
+Om \ch{OH^-} tillsättes så kommer den att neutraliseras av den svaga syran
+i vänsterledet
+\begin{flalign*}
+\underset{s}{\ch{HCOOH}}+\underset{b}{\ch{OH^-}}\rightarrow \underset{b}{\ch{HCOO^-}}+\underset{s}{\ch{H2O}}\\
+\end{flalign*}
+
+Analogt för den andra bufferten
+\begin{flalign*}
+&\ch{H2PO4^-}+\ch{H20}\ch{<=>}\ch{H^+} + \ch{HPO4^{2-}}\\
+&\ch{Na2HPO4}(s) +\ch{H2O}\rightarrow \ch{HPO4^{2-}}(aq)\\
+\end{flalign*}
+Om \ch{H^+} tillsättes så kommer den konjugerade basen i högerledet
+att omvandla oxoniumjonen till vatten
+\begin{flalign*}
+\underset{s}{\ch{H^+}} +\underset{b}{\ch{HPO4^{2-}}}\rightarrow \underset{s}{\ch{H2PO4^-}}+\underset{b}{\ch{H2O}}\\
+\end{flalign*}
+Om \ch{OH^-} tillsättes så kommer den att neutraliseras av den svaga syran
+i vänsterledet
+\begin{flalign*}
+\underset{s}{\ch{H2PO4^-}}+\underset{b}{\ch{OH^-}}\rightarrow \underset{b}{\ch{HPO4^{2-}}}+\underset{s}{\ch{H2O}}\\
+\end{flalign*}
+
+
+
+
+\item \textit{Bufferten måste justeras till korrekt pH-värde efter att den gjorts enligt recept.
+Varför kan det behövas trots att ni gjort bufferten noga?}\\
+
+Därför att vi har antagit ideala syror vilka inte påverkas av jon-par formationer och andra typer
+av intramolekylära reaktioner. Motsvarigheten är allmänna gaslagen där antagandet är idela gaser.
+Den effektiva koncentrationen av \ch{H^+} är ej skiljer sig lite från den ideala modellen.
+Oxoniumjonen har inte riktigt samma ``aktivitet''
+
+\end{enumerate}
+
+
+\section{Buffert 1 pH 3.5}
+
+Enligt utdelade pappret ``Buffertspann'' så är det lämpligaste syra/konjugerade baspar
+Myrsyra/Formiatjonen
+\begin{flalign*}
+\ch{HCOOH}(aq)\ch{<=>}\ch{H^+}(aq) + \ch{HCOO^-}(aq)\\
+\end{flalign*}
+där
+\begin{flalign*}
+K_a&=1.7\times 10^{-4}\\
+pK_a&=-log(1.7\times 10^{-4})=3.7696
+\end{flalign*}
+Vi ska åstadkomma pH 3.5 vilket insättes i vänsterledet
+\begin{flalign*}
+pH &=pK_a + log\frac{[\ch{HCOO^-}]}{[\ch{HCOOH}]}\\
+3.5&=3.7696+ log\frac{[\ch{HCOO^-}]}{[\ch{HCOOH}]}\iff\\
+log\frac{[\ch{HCOO^-}]}{[\ch{HCOOH}]}&=-0.2696\\
+\end{flalign*}
+eller om vi tar antilogaritmen
+\begin{flalign*}
+\frac{[\ch{HCOO^-}]}{[\ch{HCOOH}]}&=10^{-0.2696}\\
+                              &=0.5375\\
+							  &=\frac{1}{1.8605}\\
+\end{flalign*}
+Vilket betyder att det molära förhållandet
+\begin{flalign*}
+\frac{n(\ch{HCOONa})}{n(\ch{HCOOH})}&=\frac{1}{1.8605}\\
+\end{flalign*}
+Molmassorna för respektive förening är
+\begin{flalign*}
+M(\ch{HCOONa})&=1.01+12.01+2\cdot 16.00+22.99\\
+              &=68.010\text{ g}\cdot\text{ mol}^{-1}\\\\
+M(\ch{HCOOH})&=2\cdot1.01+12.01+2\cdot 16.00\\ 
+               &=46.030 \text{ g}\cdot\text{ mol}^{-1}\\
+\end{flalign*}
+För att bestämma den erfoderliga substansmängden så har vi formeln
+\begin{flalign*}
+c&=\frac{n}{V}\iff\\
+n(\ch{HCOONa})&=c\cdot V=0.1\cdot 0.1 = 0.01\\
+n(\ch{HCOOH})&=1.8\cdot n(\ch{NaH2PO4})=0.018\\
+\end{flalign*}
+Massan m(\ch{HCOONa}) som ska vägas upp är
+\begin{flalign*}
+m(\ch{HCOONa})&=n(\ch{HCOONa})\cdot M(\ch{HCOONa})\\
+               &=0.01\cdot 68.010\\
+			   &=0.68 \text{ g}\\
+\end{flalign*}
+Massan m(\ch{HCOOH}) som ska vägas upp är
+\begin{flalign*}
+m(\ch{HCOOH})&=n(\ch{HCOOH})\cdot M(\ch{HCOOH})\\
+               &=0.018\cdot 46.030\\
+			   &=0.8285 \text{ g}\\
+\end{flalign*}
+men myrsyran är i flytande form. Antar för räkningens skull att den finns tillgänglig specificerad med
+en viktprocent $v_{\%}$
+\begin{flalign*}
+v_{\%}&=\frac{m(\ch{HCOONa})}{m_{sol}}\iff\\
+m_{sol}&=\frac{m(\ch{HCOONa})}{v_{\%}}\\
+\end{flalign*}
+Massorna blandas och lösning späds till 100ml.
+
+
+\section{Buffert 2 pH 7.4}
+Enligt utdelade pappret ``Buffertspann'' så är det lämpligaste syra/konjugerade baspar
+\ch{H2PO4^-}/\ch{HPO4^{2-}}.\\
+Kursboken har en fullständig lösning och anger att molförhållandet 1.5:1 ska gälla
+\begin{flalign*}
+\frac{[\ch{HPO4^{2-}]}}{[\ch{H2PO4^-}]}&=1.5\\
+\end{flalign*}
+Man skall lösa 1.5 mol \ch{Na2HPO4} och 1.0 mol \ch{NaH2PO4} i vatten.
+Buffertkoncentrationen skall vara 0.1 M och volymen skall vara 100 ml.\\
+
+Molmassorna för respektive förening är
+\begin{flalign*}
+M(\ch{Na2HPO4})&= 2\cdot22.99+1.01+30.97+4\cdot 16.00\\
+               &=141.96 \text{ g}\cdot\text{ mol}^{-1}\\
+M(\ch{NaH2PO4})&= 22.99+2\cdot1.01+30.97+4\cdot 16.00\\
+               &=119.98 \text{ g}\cdot\text{ mol}^{-1}\\
+\end{flalign*}
+För att bestämma den erfoderliga substansmängden så har vi formeln
+\begin{flalign*}
+c&=\frac{n}{V}\iff\\
+n(\ch{NaH2PO4})&=c\cdot V=0.1\cdot 0.1 = 0.01\\
+n(\ch{Na2HPO4})&=1.5\cdot n(\ch{NaH2PO4})=0.015\\
+\end{flalign*}
+
+Massorna som ska vägas upp är
+\begin{flalign*}
+m(\ch{NaH2PO4})&=n(\ch{NaH2PO4})\cdot M(\ch{NaH2PO4})\\
+               &=0.01\cdot 119.98\\
+			   &=1.1998 \text{ g}\\
+\end{flalign*}
+samt
+\begin{flalign*}
+m(\ch{Na2HPO4})&=n(\ch{Na2HPO4})\cdot M(\ch{Na2HPO4})\\
+               &=0.015\cdot 141.96\\
+			   &=2.1294\text{ g}\\
+\end{flalign*}
+
+\section{Mätverktyg}
+Precisionspipett skall användas.
+
+
+%\vfill\null
+%\clearpage
+%\columnbreak
+%\newpage
+
+
+
+%\underbrace{}
+
+% \hspace{1em}
+
+%\begin{enumerate}[label=(\alph*)]
+%\end{enumerate}
+
+%$$
+%  A = 
+%  \begin{bmatrix}
+%    1 & 0  & 2i\\
+%    2i & 0 &  -4\\
+%    -i &  0 & -2i\\
+%  \end{bmatrix}
+%$$
+
+%\begin{flalign*}
+%  A = 
+%  \begin{bmatrix}
+%    1 & 0  & 2i\\
+%    2i & 0 &  -4\\
+%    -i &  0 & -2i\\
+%  \end{bmatrix}
+%\end{flalign*}
+
+
+%\begin{flalign*}
+%\psi(x) = \begin{cases} Ae^{ikx}+Be^{-ikx} &\ \  x<-a \\
+%                        Ce^{\kappa x}+De^{-\kappa x} &\ \ -a < x < a\\
+%						Fe^{ikx} & \ \ x>a
+%       \end{cases}
+%\end{flalign*}
+
+%\begin{figure}[H]
+%  \includegraphics[width=\linewidth]{odd_finite.eps}
+%  \caption{$z_0=0.1\pi,0.5\pi, 3\pi,7\pi$}
+%  \label{fig4}
+%\end{figure}
+\end{document}
+
+
+
+
+
+
+\vfill\null
+\clearpage
+\columnbreak
+\newpage
+
+
+
+
+
+
+
+
+
+
+                                     
+                                     
+
+
+
