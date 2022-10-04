@@ -1,6 +1,6 @@
 %\documentclass{book}
 %\documentclass[twocolumn]{article}
-\documentclass{article}
+\documentclass[a4paper,10pt,fleqn,reqno]{article}
 %\documentclass{book}
 \usepackage{parskip}
 \usepackage{geometry}
@@ -10,6 +10,12 @@ marginparwidth=178pt,
 marginparsep = 40pt,
 lmargin = 90pt
 }
+%---------------- show page layout. don't use in a real document!
+%\usepackage{showframe}
+%\renewcommand\ShowFrameLinethickness{0.15pt}
+%\renewcommand*\ShowFrameColor{\color{red}}
+%---------------------------------------------------------------%
+
 \usepackage{multicol}
 \setlength{\columnsep}{0.9cm}
 \usepackage{supertabular}
@@ -17,12 +23,7 @@ lmargin = 90pt
 %\usepackage{geometry}   % Setup for page and paper dimensions
 \usepackage{wrapfig}
 \usepackage{subfigure}
-\usepackage{caption}
-\captionsetup{
-  font=small,
-  labelfont=bf,
-  tableposition=top
-}
+
 \usepackage{float}
 \usepackage[swedish]{babel}
 \usepackage{hyperref}
@@ -49,6 +50,12 @@ lmargin = 90pt
 \node[draw,circle,inner sep=1pt] {#1};
 \end{tikzpicture}}
 \usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  tableposition=top
+}
 \usepackage{chemfig}
 \usepackage{chemformula}
 %\usepackage{chemmacros}
@@ -57,6 +64,9 @@ lmargin = 90pt
 \usepackage{mathtools}
 \usepackage{tabularx}
 \usepackage{marginnote}
+%\usepackage{marginfix}
+%\usepackage{marginpar}
+
 \usepackage{layout}
 
 \newcommand*\pkg[1]{\texttt{#1}}
